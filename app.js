@@ -14,7 +14,7 @@ window.addEventListener('load',()=>{
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            const api =`http://api.weatherapi.com/v1/current.json?key=117d8f778efe4c5fb53231729222505&q=${lat},${long}`;
+            const api =`https://api.weatherapi.com/v1/current.json?key=117d8f778efe4c5fb53231729222505&q=${lat},${long}`;
             
             const iconapi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=f4b57399c560c2b41f1438adb75e30ff`
             fetch(api)
